@@ -7,7 +7,7 @@ basic.forever(function on_forever() {
     for (let wx = 0; wx < 5; wx++) {
         for (let wy = 0; wy < 5; wy++) {
             if (world[wy][wx + x - 2] == 1) {
-                led.plotBrightness(2, y, 100)
+                led.plotBrightness(wx, wy, 100)
             }
             
         }

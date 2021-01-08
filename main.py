@@ -8,7 +8,7 @@ def on_forever():
     for wx in range(5):
         for wy in range(5):
             if(world[wy][wx + x - 2] == 1):
-                led.plot_brightness(2, y, 100)
+                led.plot_brightness(wx, wy, 100)
 basic.forever(on_forever)
 
 def on_button_pressed_a():
